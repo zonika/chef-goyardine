@@ -4,19 +4,59 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="http://www.goyard.com/public/style/front.css">
+
+    <style>
+      #afficheColGoy.colGoy1,
+      #afficheColGoy.colGoy2,
+      #afficheColGoy.colGoy3,
+      #afficheColGoy.colGoy4,
+      #afficheColGoy.colGoy5,
+      #afficheColGoy.colGoy6,
+      #afficheColGoy.colGoy7,
+      #afficheColGoy.colGoy8,
+      #afficheColGoy.colGoy9,
+      #afficheColGoy.colGoy10,
+      #afficheColGoy.colGoy11,
+      #afficheColGoy.colGoy12,
+      #afficheColGoy.colGoy13,
+      #afficheColGoy.colGoy14 {
+        background-image: url("http://www.goyard.com/public/images/bg_AfficheColGoy.jpg");
+        position: absolute;
+      }
+
+      .chef-goyardine #afficheInitiales {
+        font-size: 50px;
+        margin-top: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+
+      .chef-goyardine {
+        height: 400px;
+      }
+
+      .imagesSlider.wrapper {
+        margin: 0;
+      }
+
+    </style>
 </head>
 <body>
-    <div id="ombrevignettes" style="background:none;" class="fullscreenMarquage">
-        <div class="imagesSlider swipe wrapper">
-            <div class="imagesContent">
-                <div class="image marquageCustom">
-                    <div id="afficheColGoy"></div>
-                    <div id="afficheMotif"></div>
-                    <div id="afficheMotif1"></div>
-                    <div id="afficheInitiales">zoe</div>
-                </div>
-            </div>
+  <div id="ombrevignettes" style="background:none;" class="fullscreenMarquage">
+    <div class="imagesSlider swipe wrapper">
+      <div class="imagesContent">
+        <div class="image marquageCustom chef-goyardine">
+          <div id="afficheColGoy" class="{{ afficheColGoy }}"></div>
+          <div id="afficheMotif" class="{{ afficheMotif }}"></div>
+          <div id="afficheMotif1" class="{{ afficheMotif }}"></div>
+          <div id="afficheInitiales" class="{{ afficheInitiales }}">
+            {{ message }}
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>

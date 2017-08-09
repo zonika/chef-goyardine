@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "html2canvas": "^0.5.0-beta4",
+    "phantomjs": "^2.1.7"
   }
 }
